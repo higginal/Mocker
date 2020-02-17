@@ -6,7 +6,7 @@ import PlayerColumn from './PlayerColumn';
 import PlayerPool from './PlayerPool';
 import initialData from './initial-data.js';
 import styled from 'styled-components';
-
+import PlayersFile from './players.json';
 
 
 const DraftTable = styled.div`
@@ -50,6 +50,19 @@ export default class Mock extends React.Component {
             filledTeamIds.push('team-' + i)
         }
 
+        const allPlayers = {}
+
+        console.log(PlayersFile['players']['Tua-T'])
+
+        //PlayersFile.map((value) => {
+        //    allPlayers[value] = PlayersFile[value]
+        //})
+
+        //this.state.players = require('./players.json')
+
+        //this.state.players = playersFile.map( (value) => {
+        //    return value
+        //} )
 
         this.state = {
             ...this.state,
@@ -172,6 +185,7 @@ export default class Mock extends React.Component {
             }
         }
 
+        //console.log(PlayersFile['players']['Tua-T'].content)
 
 
     }
@@ -195,6 +209,7 @@ export default class Mock extends React.Component {
                         }
 
                         if (columnId === 'player-column') {
+                            //const players = this.state.players;
                             const players = this.state.players;
                             const pickedPlayers = teamColumn.playerIds;
 

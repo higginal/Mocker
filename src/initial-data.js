@@ -1,4 +1,5 @@
-import players from './players.js'
+import players from './players'
+import playerFile from './players.json'
 
 
 var request = new XMLHttpRequest();
@@ -11,7 +12,7 @@ const initialData = {
         'team-1': { id: 'team-1', content: 1 }
     },
 
-    'players': players,
+    'players': playerFile['players'],
 
 
     /*{
@@ -22,7 +23,9 @@ const initialData = {
 
     }, */
 
-    'allPlayerIds': ['Joe-Burrow', 'Chase-Young', 'Tua-T', 'Jeffrey-Okudah', 'Derrick-Brown', 'Andrew-Thomas', 'Isaiah-Simmons'],
+    //'allPlayerIds': ['Joe-Burrow', 'Chase-Young', 'Tua-T', 'Jeffrey-Okudah', 'Derrick-Brown', 'Andrew-Thomas', 'Isaiah-Simmons'],
+
+    allPlayerIds: playerFile['ids'],
 
     columns: {
         'team-column': {
