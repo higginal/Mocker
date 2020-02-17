@@ -54,16 +54,6 @@ export default class Mock extends React.Component {
 
         console.log(PlayersFile['players']['Tua-T'])
 
-        //PlayersFile.map((value) => {
-        //    allPlayers[value] = PlayersFile[value]
-        //})
-
-        //this.state.players = require('./players.json')
-
-        //this.state.players = playersFile.map( (value) => {
-        //    return value
-        //} )
-
         this.state = {
             ...this.state,
             teams: defaultOrder,
@@ -154,6 +144,12 @@ export default class Mock extends React.Component {
 
             } else {
                 // if to different column
+
+                if(finishColumn.id === 'player-column' && finishColumn.playerIds.length >= 31){
+                    console.log('full draft')
+                    return
+                }
+
                 const startPlayerIds = Array.from(startColumn.playerIds)
                 startPlayerIds.splice(source.index, 1)
                 const finishPlayerIds = Array.from(finishColumn.playerIds)

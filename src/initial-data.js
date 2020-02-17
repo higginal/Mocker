@@ -1,5 +1,3 @@
-import players from './players'
-import playerFile from './players.json'
 import playerFile2 from './testPlayers.json'
 
 

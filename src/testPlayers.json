@@ -305,7 +305,15 @@
             "content": "Justin Jefferson",
             "pos": "WR",
             "school": "LSU"
+        },
+
+        "Speedhawk": {
+            "id": "Speedhawk",
+            "content": "SpeedHawk",
+            "pos": "All",
+            "school": "Your Mom"
         }
+
     },
     "ids": [
         "Chase-Young",
@@ -358,6 +366,7 @@
         "Brycen-Hopkins",
         "Tyler-Biadasz",
         "Prince-Tega-Wanogho",
-        "Justin-Jefferson"
+        "Justin-Jefferson",
+        "Speedhawk"
     ]
 }
