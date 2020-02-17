@@ -22,7 +22,7 @@ const initialData = {
 
     }, */
 
-    'allPlayerIds': ['Joe-Burrow', 'Chase-Young', 'Tua-T'],
+    'allPlayerIds': ['Joe-Burrow', 'Chase-Young', 'Tua-T', 'Jeffrey-Okudah', 'Derrick-Brown', 'Andrew-Thomas', 'Isaiah-Simmons'],
 
     columns: {
         'team-column': {

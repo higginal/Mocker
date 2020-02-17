@@ -59,6 +59,10 @@ export default class Mock extends React.Component {
                 'team-column': {
                     ...this.state.columns['team-column'],
                     teamIds: filledTeamIds
+                },
+                'player-pool': {
+                    ...this.state.columns['player-pool'],
+                    playerIds: this.state.allPlayerIds
                 }
             }
         }
