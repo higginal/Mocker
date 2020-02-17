@@ -47,14 +47,18 @@
 }
 
 .logo{
-  padding-top: 1%;
-  padding-bottom: 5%;
+  margin: auto;
 }
 
 footer{
   color:lightgrey;
   
 }
+
+img{
+  max-width: 200px;
+}
+
 
 .App-link {
   color: #61dafb;

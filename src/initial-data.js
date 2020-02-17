@@ -46,7 +46,10 @@ const initialData = {
         }
     },
 
-    columnOrder: ['team-column', 'player-column', 'player-pool']
+    columnOrder: ['team-column', 'player-column', 'player-pool'],
+
+    draftOrder: [6, 31, 10, 22, 18, 16, 4, 0, 14, 7, 23, 24, 13, 29, 9, 1, 8,
+        18, 24, 14, 25, 3, 20, 21, 19, 18, 28, 2, 30, 11, 27, 15]
 
 }
 

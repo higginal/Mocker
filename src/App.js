@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container';
 import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup'
 import ToggleButton from 'react-bootstrap/ToggleButton'
 import ShareModal from './ShareModal';
+import logo from './images/yellow_brown_logo.png'
 
 function App() {
   return (
@@ -43,8 +44,9 @@ class Top extends React.Component {
       <Container>
 
         <div className="Header">
+        
           <h1 className="logo">
-            Mocker
+            <img src={logo} alt="Logo"/>Mocker
           </h1>
 
           <ToggleButtonGroup type="radio" name="pages" size="lg" defaultValue="Create" className="btnGrp" >

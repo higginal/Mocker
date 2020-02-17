@@ -40,15 +40,23 @@ export default class Mock extends React.Component {
         let defaultOrder = {};
         let filledTeamIds = []
 
-        for (var i = 0; i < 32; i++) {
-            defaultOrder['team-' + i] = (
+        var counter = 0;
+
+        initialData.draftOrder.map(function (value) {
+
+            defaultOrder['team-' + counter] = (
                 {
-                    id: 'team-' + i,
-                    content: i
+                    id: 'team-' + counter,
+                    content: value
                 }
             )
-            filledTeamIds.push('team-' + i)
+
+            filledTeamIds.push('team-' + counter)
+            counter++;
         }
+        )
+
+
 
         const allPlayers = {}
 
@@ -145,7 +153,7 @@ export default class Mock extends React.Component {
             } else {
                 // if to different column
 
-                if(finishColumn.id === 'player-column' && finishColumn.playerIds.length >= 31){
+                if (finishColumn.id === 'player-column' && finishColumn.playerIds.length >= this.state.columns["team-column"].teamIds.length) {
                     console.log('full draft')
                     return
                 }
