@@ -1,0 +1,19 @@
+.draftTable{
+  border-style: solid;
+  display: block;
+  margin: auto;
+  table-layout: auto;
+  padding-top: 5px;
+  margin-bottom: 2%;
+  width: 70%;
+  height: 500px;
+
+}
+
+
+.teamCard{
+
+  width: auto;
+
+}
+

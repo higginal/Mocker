@@ -1,0 +1,41 @@
+const initialData = {
+
+    'teams': {
+        'team-1': { id: 'team-1', content: 1 }
+    },
+
+    'players' : {
+
+        'Joe-Burrow': { id: 'Joe-Burrow', content: 'Joe Burrow', pos: 'Quarterback', school: 'LSU' },
+        'Chase-Young': { id: 'Chase-Young', content: 'Chase Young', pos: 'Edge', school: 'OSU' },
+        'Tua-T': { id: 'Tua-T', content: 'Tua T', pos: 'Quarterback', school: 'Alabama' }
+
+    },
+
+    'allPlayerIds' : ['Joe-Burrow', 'Chase-Young', 'Tua-T'],
+
+    columns: {
+        'team-column': {
+            id: 'team-column',
+            title: 'Teams',
+            teamIds: null
+        },
+
+        'player-column': {
+            id: 'player-column',
+            title: 'Picked Players',
+            playerIds: []
+        },
+
+        'player-pool': {
+            id: 'player-pool',
+            title: 'Player Pool',
+            playerIds: ['Joe-Burrow', 'Chase-Young', 'Tua-T']
+        }
+    },
+
+    columnOrder : ['team-column', 'player-column', 'player-pool']
+
+}
+
+export default initialData;
