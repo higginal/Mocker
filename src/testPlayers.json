@@ -1,0 +1,363 @@
+{
+    "players": {
+        "Chase-Young": {
+            "id": "Chase-Young",
+            "content": "Chase Young",
+            "pos": "EDGE",
+            "school": "Ohio St."
+        },
+        "Joe-Burrow": {
+            "id": "Joe-Burrow",
+            "content": "Joe Burrow",
+            "pos": "QB",
+            "school": "LSU"
+        },
+        "Tua-Tagovailoa": {
+            "id": "Tua-Tagovailoa",
+            "content": "Tua Tagovailoa",
+            "pos": "QB",
+            "school": "Alabama"
+        },
+        "Jeff-Okudah": {
+            "id": "Jeff-Okudah",
+            "content": "Jeff Okudah",
+            "pos": "CB",
+            "school": "Ohio St."
+        },
+        "Isaiah-Simmons": {
+            "id": "Isaiah-Simmons",
+            "content": "Isaiah Simmons",
+            "pos": "LB",
+            "school": "Clemson"
+        },
+        "Derrick-Brown": {
+            "id": "Derrick-Brown",
+            "content": "Derrick Brown",
+            "pos": "DL",
+            "school": "Auburn"
+        },
+        "Javon-Kinlaw": {
+            "id": "Javon-Kinlaw",
+            "content": "Javon Kinlaw",
+            "pos": "DL",
+            "school": "South Carolina"
+        },
+        "CeeDee-Lamb": {
+            "id": "CeeDee-Lamb",
+            "content": "CeeDee Lamb",
+            "pos": "WR",
+            "school": "Oklahoma"
+        },
+        "Jedrick-Wills-Jr.": {
+            "id": "Jedrick-Wills-Jr.",
+            "content": "Jedrick Wills Jr.",
+            "pos": "OL",
+            "school": "Alabama"
+        },
+        "Andrew-Thomas": {
+            "id": "Andrew-Thomas",
+            "content": "Andrew Thomas",
+            "pos": "OL",
+            "school": "Georgia"
+        },
+        "Jerry-Jeudy": {
+            "id": "Jerry-Jeudy",
+            "content": "Jerry Jeudy",
+            "pos": "WR",
+            "school": "Alabama"
+        },
+        "A.J.-Epenesa": {
+            "id": "A.J.-Epenesa",
+            "content": "A.J. Epenesa",
+            "pos": "EDGE",
+            "school": "Iowa"
+        },
+        "Tristan-Wirfs": {
+            "id": "Tristan-Wirfs",
+            "content": "Tristan Wirfs",
+            "pos": "OL",
+            "school": "Iowa"
+        },
+        "K'Lavon-Chaisson": {
+            "id": "K'Lavon-Chaisson",
+            "content": "K'Lavon Chaisson",
+            "pos": "EDGE",
+            "school": "LSU"
+        },
+        "Xavier-McKinney": {
+            "id": "Xavier-McKinney",
+            "content": "Xavier McKinney",
+            "pos": "S",
+            "school": "Alabama"
+        },
+        "Mekhi-Becton": {
+            "id": "Mekhi-Becton",
+            "content": "Mekhi Becton",
+            "pos": "OL",
+            "school": "Louisville"
+        },
+        "Henry-Ruggs-III": {
+            "id": "Henry-Ruggs-III",
+            "content": "Henry Ruggs III",
+            "pos": "WR",
+            "school": "Alabama"
+        },
+        "Kristian-Fulton": {
+            "id": "Kristian-Fulton",
+            "content": "Kristian Fulton",
+            "pos": "CB",
+            "school": "LSU"
+        },
+        "Yetur-Gross-Matos": {
+            "id": "Yetur-Gross-Matos",
+            "content": "Yetur Gross-Matos",
+            "pos": "EDGE",
+            "school": "Penn St."
+        },
+        "Justin-Herbert": {
+            "id": "Justin-Herbert",
+            "content": "Justin Herbert",
+            "pos": "QB",
+            "school": "Oregon"
+        },
+        "Neville-Gallimore": {
+            "id": "Neville-Gallimore",
+            "content": "Neville Gallimore",
+            "pos": "DL",
+            "school": "Oklahoma"
+        },
+        "Grant-Delpit": {
+            "id": "Grant-Delpit",
+            "content": "Grant Delpit",
+            "pos": "S",
+            "school": "LSU"
+        },
+        "Tee-Higgins": {
+            "id": "Tee-Higgins",
+            "content": "Tee Higgins",
+            "pos": "WR",
+            "school": "Clemson"
+        },
+        "Trevon-Diggs": {
+            "id": "Trevon-Diggs",
+            "content": "Trevon Diggs",
+            "pos": "CB",
+            "school": "Alabama"
+        },
+        "CJ-Henderson": {
+            "id": "CJ-Henderson",
+            "content": "CJ Henderson",
+            "pos": "CB",
+            "school": "Florida"
+        },
+        "Kenneth-Murray": {
+            "id": "Kenneth-Murray",
+            "content": "Kenneth Murray",
+            "pos": "LB",
+            "school": "Oklahoma"
+        },
+        "Bryce-Hall": {
+            "id": "Bryce-Hall",
+            "content": "Bryce Hall",
+            "pos": "CB",
+            "school": "Virginia"
+        },
+        "Josh-Jones": {
+            "id": "Josh-Jones",
+            "content": "Josh Jones",
+            "pos": "OL",
+            "school": "Houston"
+        },
+        "Ross-Blacklock": {
+            "id": "Ross-Blacklock",
+            "content": "Ross Blacklock",
+            "pos": "DL",
+            "school": "TCU"
+        },
+        "Laviska-Shenault-Jr.": {
+            "id": "Laviska-Shenault-Jr.",
+            "content": "Laviska Shenault Jr.",
+            "pos": "WR",
+            "school": "Colorado"
+        },
+        "A.J.-Terrell": {
+            "id": "A.J.-Terrell",
+            "content": "A.J. Terrell",
+            "pos": "CB",
+            "school": "Clemson"
+        },
+        "D'Andre-Swift": {
+            "id": "D'Andre-Swift",
+            "content": "D'Andre Swift",
+            "pos": "RB",
+            "school": "Georgia"
+        },
+        "Jordan-Love": {
+            "id": "Jordan-Love",
+            "content": "Jordan Love",
+            "pos": "QB",
+            "school": "Utah St."
+        },
+        "Jacob-Eason": {
+            "id": "Jacob-Eason",
+            "content": "Jacob Eason",
+            "pos": "QB",
+            "school": "Washington"
+        },
+        "Jonathan-Taylor": {
+            "id": "Jonathan-Taylor",
+            "content": "Jonathan Taylor",
+            "pos": "RB",
+            "school": "Wisconsin"
+        },
+        "Ashtyn-Davis": {
+            "id": "Ashtyn-Davis",
+            "content": "Ashtyn Davis",
+            "pos": "S",
+            "school": "California"
+        },
+        "Jeff-Gladney": {
+            "id": "Jeff-Gladney",
+            "content": "Jeff Gladney",
+            "pos": "CB",
+            "school": "TCU"
+        },
+        "Terrell-Lewis": {
+            "id": "Terrell-Lewis",
+            "content": "Terrell Lewis",
+            "pos": "EDGE",
+            "school": "Alabama"
+        },
+        "Curtis-Weaver": {
+            "id": "Curtis-Weaver",
+            "content": "Curtis Weaver",
+            "pos": "EDGE",
+            "school": "Boise St."
+        },
+        "Julian-Okwara": {
+            "id": "Julian-Okwara",
+            "content": "Julian Okwara",
+            "pos": "EDGE",
+            "school": "Notre Dame"
+        },
+        "Patrick-Queen": {
+            "id": "Patrick-Queen",
+            "content": "Patrick Queen",
+            "pos": "LB",
+            "school": "LSU"
+        },
+        "Brandon-Aiyuk": {
+            "id": "Brandon-Aiyuk",
+            "content": "Brandon Aiyuk",
+            "pos": "WR",
+            "school": "Arizona St."
+        },
+        "Jalen-Reagor": {
+            "id": "Jalen-Reagor",
+            "content": "Jalen Reagor",
+            "pos": "WR",
+            "school": "TCU"
+        },
+        "Isaiah-Wilson": {
+            "id": "Isaiah-Wilson",
+            "content": "Isaiah Wilson",
+            "pos": "OL",
+            "school": "Georgia"
+        },
+        "Zack-Baun": {
+            "id": "Zack-Baun",
+            "content": "Zack Baun",
+            "pos": "LB",
+            "school": "Wisconsin"
+        },
+        "Cole-Kmet": {
+            "id": "Cole-Kmet",
+            "content": "Cole Kmet",
+            "pos": "TE",
+            "school": "Notre Dame"
+        },
+        "Austin-Jackson": {
+            "id": "Austin-Jackson",
+            "content": "Austin Jackson",
+            "pos": "OL",
+            "school": "USC"
+        },
+        "Brycen-Hopkins": {
+            "id": "Brycen-Hopkins",
+            "content": "Brycen Hopkins",
+            "pos": "TE",
+            "school": "Purdue"
+        },
+        "Tyler-Biadasz": {
+            "id": "Tyler-Biadasz",
+            "content": "Tyler Biadasz",
+            "pos": "OL",
+            "school": "Wisconsin"
+        },
+        "Prince-Tega-Wanogho": {
+            "id": "Prince-Tega-Wanogho",
+            "content": "Prince Tega Wanogho",
+            "pos": "OL",
+            "school": "Auburn"
+        },
+        "Justin-Jefferson": {
+            "id": "Justin-Jefferson",
+            "content": "Justin Jefferson",
+            "pos": "WR",
+            "school": "LSU"
+        }
+    },
+    "ids": [
+        "Chase-Young",
+        "Joe-Burrow",
+        "Tua-Tagovailoa",
+        "Jeff-Okudah",
+        "Isaiah-Simmons",
+        "Derrick-Brown",
+        "Javon-Kinlaw",
+        "CeeDee-Lamb",
+        "Jedrick-Wills-Jr.",
+        "Andrew-Thomas",
+        "Jerry-Jeudy",
+        "A.J.-Epenesa",
+        "Tristan-Wirfs",
+        "K'Lavon-Chaisson",
+        "Xavier-McKinney",
+        "Mekhi-Becton",
+        "Henry-Ruggs-III",
+        "Kristian-Fulton",
+        "Yetur-Gross-Matos",
+        "Justin-Herbert",
+        "Neville-Gallimore",
+        "Grant-Delpit",
+        "Tee-Higgins",
+        "Trevon-Diggs",
+        "CJ-Henderson",
+        "Kenneth-Murray",
+        "Bryce-Hall",
+        "Josh-Jones",
+        "Ross-Blacklock",
+        "Laviska-Shenault-Jr.",
+        "A.J.-Terrell",
+        "D'Andre-Swift",
+        "Jordan-Love",
+        "Jacob-Eason",
+        "Jonathan-Taylor",
+        "Ashtyn-Davis",
+        "Jeff-Gladney",
+        "Terrell-Lewis",
+        "Curtis-Weaver",
+        "Julian-Okwara",
+        "Patrick-Queen",
+        "Brandon-Aiyuk",
+        "Jalen-Reagor",
+        "Isaiah-Wilson",
+        "Zack-Baun",
+        "Cole-Kmet",
+        "Austin-Jackson",
+        "Brycen-Hopkins",
+        "Tyler-Biadasz",
+        "Prince-Tega-Wanogho",
+        "Justin-Jefferson"
+    ]
+}
