@@ -1,5 +1,6 @@
 .draftTable{
   border-style: solid;
+  border-color: aquamarine;
   display: block;
   margin: auto;
   table-layout: auto;
@@ -7,6 +8,7 @@
   margin-bottom: 2%;
   width: 70%;
   height: 500px;
+  border-radius: 10px;
 
 }
 

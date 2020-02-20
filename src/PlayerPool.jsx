@@ -19,12 +19,18 @@ const Title = styled.div`
     font-weight: bold;
 `;
 
+const SearchBar = styled.input`
+    border-radius: 5px;
+    margin-bottom: 3%;
+
+`;
+
 const PlayerList = styled.div`
     border: black;
     padding: 2px;
     margin: 1%;
     overflow-y: scroll;
-    height: 450px;
+    height: 420px;
     transition: background-color 0.2s ease;
     background-color: ${props => (props.isDraggingOver ? !props.players.includes(props.draggingOverWith) ? 'lightcoral' : 'lightgreen' : 'white')};
     flex-grow: 1;
@@ -37,16 +43,30 @@ export default class PlayerPool extends React.Component {
         this.state = {
             id: 'player-pool',
             title: 'Unselected Players',
-            playerIds: this.props.playerIds
-
+            playerIds: this.props.playerIds,
+            search: ""
         }
     }
+
+    updateSearch(event){
+        this.setState({
+            ...this.state,
+            search: event.target.value
+        })
+    }
+
     render() {
 
+        let filteredPlayerIds = this.props.column.playerIds.filter(
+            player => {
+                return this.props.players[player].content.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
+            }
 
+        )
         return (
             <Container>
                 <Title>{this.props.column.title}</Title>
+                <SearchBar type='search' placeholder="Search.." value={this.state.search} onChange={this.updateSearch.bind(this)}/>
                 <Droppable droppableId={this.props.column.id}>
                     {(provided, snapshot) => (
                         <PlayerList
@@ -56,7 +76,8 @@ export default class PlayerPool extends React.Component {
                             isDraggingOver={snapshot.isDraggingOver}
                             draggingOverWith={snapshot.draggingOverWith}
                             players={this.props.allPlayerIds}>
-                            {this.props.column.playerIds.map((value, index) => (
+                            
+                            {filteredPlayerIds.map((value, index) => (
 
                                 <PlayerCard key={value} id={value} playerId={value} players={this.props.players} index={index} 
                                     color="DimGrey"

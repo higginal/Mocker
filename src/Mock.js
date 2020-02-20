@@ -14,6 +14,8 @@ const DraftTable = styled.div`
     width: 80%;
     margin: auto;
     overflow-y: scroll;
+    border-style: solid;
+    border-radius: 10px;
 `;
 
 
