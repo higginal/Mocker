@@ -56,9 +56,9 @@ export default class PlayerPool extends React.Component {
     }
 
     render() {
-
+        
         let filteredPlayerIds = this.props.column.playerIds.filter(
-            
+
             player => {
                 return this.props.players[player].content.toLowerCase().indexOf(this.state.search.toLowerCase()) !== -1
             }

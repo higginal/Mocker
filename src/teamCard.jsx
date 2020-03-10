@@ -32,7 +32,7 @@ export default class TeamCard extends React.Component {
         //console.log(props.value)
         const teamId = props.value
         //console.log(props.teams[props.value])
-
+        
         this.state = {
             id: props.id,
             teamId: props.value,
@@ -76,11 +76,11 @@ export default class TeamCard extends React.Component {
 
 
     render() {
-
+        //console.log(this.props.teams)
         return (
             <Draggable draggableId={this.props.id} index={this.props.index}>
                 {(provided, snapshot) => (
-
+                    
                     <StyledCard
                         {...provided.draggableProps}
                         {...provided.dragHandleProps}
@@ -92,7 +92,7 @@ export default class TeamCard extends React.Component {
                         parentCallback={this.callbackFunction}
                         >{this.state.teamName}</TeamModal></Card.Header>
                         <ColoredCardBody teamColor={this.state.teamColor}>
-                            <Card.Text> Pick #:{this.props.index + 1} </Card.Text>
+                            <Card.Text> Pick #:{(32 * this.props.round) + this.props.index + 1} </Card.Text>
                         </ColoredCardBody>
                     </StyledCard>
                 )

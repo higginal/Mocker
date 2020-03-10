@@ -64,7 +64,7 @@ export default class TeamColumn extends React.Component {
                         >
                             {this.props.teamIds.map((value, index) => (
                                 
-                                <TeamCard key={value} id={value} value={value} index={index} teams={this.props.teams}/>
+                                <TeamCard key={value} id={value} value={value} index={index} teams={this.props.teams} round={this.props.round}/>
                             ))}
                             {provided.placeholder}
                         </DraftList>

@@ -39,7 +39,8 @@ export default class PlayerCard extends React.Component {
         //console.log(props.value)
         const playerId = props.playerId
         //console.log(props.teams[props.value])
-        console.log(props.players[props.id].content)
+        //console.log(props.players[props.id].content)
+
         this.state = {
             id: props.id,
             playerId:  props.playerId,
@@ -53,7 +54,7 @@ export default class PlayerCard extends React.Component {
     }
 
     render() {
-
+        
         return (
 
             <Draggable draggableId={this.props.id} index={this.props.index}>

@@ -49,7 +49,7 @@ export default class Mock extends React.Component {
         super(props)
 
         this.state = props.mockPage
-
+        console.log(this.props.mockPage.teams)
         /*
         let defaultOrder = {};
         let filledTeamIds = []
@@ -243,8 +243,9 @@ export default class Mock extends React.Component {
                             const actualTeams = teamColumn.teamIds;
                             //const teamIds = teams.map(teamId => this.state.teams)
                             //teamColumn.teamIds = Array(teams);
+                            console.log(this.props.teamSetup)
 
-                            return <TeamColumn key={teamColumn.id} title="Teams" teamIds={actualTeams} column={teamColumn} teams={teams} />
+                            return <TeamColumn key={teamColumn.id} title="Teams" teamIds={actualTeams} column={teamColumn} teams={this.props.teamSetup} round={this.props.mockIndex}/>
                         }
 
                         if (columnId === 'player-column') {
