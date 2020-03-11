@@ -31,14 +31,14 @@ export default function TeamModal(props) {
 
     const handleChange = (event) => {
         state = { value: event.target.value }
-        console.log(state.value)
+
         sendData();
         //props.teamId = state.value;
         
     }
     //TODO: Fix later
     const handleSubmit = (event) => {
-        console.log(state.value)
+
         props.teamId = state.value;        
     }
 

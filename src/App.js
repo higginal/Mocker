@@ -35,6 +35,8 @@ function createMockTable(mocks, mockIndex, callbackFunction) {
 
 class Top extends React.Component {
 
+  maxRounds = 3;
+  maxMockPages = false;
 
   state = {
     prevArrow: false,
@@ -56,10 +58,9 @@ class Top extends React.Component {
   }
 
   changeMockPageData = (newState, index) => {
-    console.log(index)
     //this.setState({ ...this.state, message: "ok boom" }, () => console.log(this.state.message))
     var numIndex = index
-    console.log(newState.columns['player-pool'].playerIds)
+
     this.setState({
       ...this.state,
       globalPlayerPool: newState.columns['player-pool'].playerIds,
@@ -74,11 +75,11 @@ class Top extends React.Component {
         [index]: newState
       }
 
-    }, () => console.log(this.state.mocks))
+    })
 
     //this.state.globalPlayerPool = (this.state.mocks[this.state.currentMock].columns['player-pool'].playerIds)
 
-    //console.log(this.state.message)
+
     //console.log(this.state.mocks[index].columns['team-column'].teamIds)
 
     //console.log("ok")
@@ -103,7 +104,7 @@ class Top extends React.Component {
           content: value
         }
       )
-      console.log(value)
+
       filledTeamIds2.push('team-' + counter)
       counter++;
     }
@@ -111,7 +112,7 @@ class Top extends React.Component {
 
 
 
-    console.log(defaultOrder2)
+
 
     //console.log(filledTeamIds)
     //this.state.globalPlayerPool = initialData.allPlayerIds
@@ -202,6 +203,7 @@ class Top extends React.Component {
 
     this.state.prevArrow = this.state.currentMock > 0;
     this.state.nextArrow = this.state.currentMock < this.state.totalRounds - 1;
+    this.maxMockPages = this.state.totalRounds >= 3;
 
     /*
     if (this.state.currentMock > 0) {
@@ -215,7 +217,7 @@ class Top extends React.Component {
 
     }
     */
-    console.log(this.state.globalPlayerPool)
+
 
     return (
 
@@ -242,11 +244,11 @@ class Top extends React.Component {
         <Mock parentCallback={this.callbackFunction} changeMockCallback={this.changeMockPageData} mockPage={this.state.mocks[this.state.currentMock]} mockIndex={this.state.currentMock}
           teamSetup={this.state.mocks[this.state.currentMock].teams} />
 
+        <b>Round {this.state.currentMock + 1}</b><br/>
+
         <Button disabled={!this.state.prevArrow} onClick={() => {
-          console.log(this.state.currentMock)
+
           this.state.currentMock--
-
-
           this.setState({
             ...this.state,
             //globalPlayerPool: this.state.mocks[this.state.currentMock].columns['player-pool'].playerIds,
@@ -275,10 +277,10 @@ class Top extends React.Component {
           this.state.currentMock++
           this.setState(this.state)
 
-        }}>+</Button>
+        }} disabled = {this.maxMockPages}>+</Button>
 
         <Button disabled={!this.state.nextArrow} onClick={() => {
-          console.log(this.state.currentMock)
+
           this.state.currentMock++
           this.setState({
             ...this.state,

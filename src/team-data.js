@@ -96,7 +96,7 @@ const teamData = {
         color: "#125740"
     },
     24: {
-        name: "Oakland Raiders",
+        name: "Las Vegas Raiders",
         color: "#000000"
     },
     25: {

@@ -15,7 +15,7 @@ function draftText(teams) {
 function setupOrder(props) {
 
     let allInfo = props.allData;
-    console.log(allInfo.mocks[0].columns['team-column'].teamIds)
+
     let totalIds = []
     let totalTeams = {}
     let totalPickedPlayers = []
@@ -24,7 +24,7 @@ function setupOrder(props) {
     var i;
     var count = 0;
     for (i = 0; i < allInfo.totalRounds; i++) {
-        console.log(allInfo.mocks[i].columns['team-column'].teamIds)
+
         totalIds = totalIds.concat(allInfo.mocks[i].columns['team-column'].teamIds)
 
         totalTeams = Object.assign(totalTeams, allInfo.mocks[i].teams)
@@ -32,10 +32,6 @@ function setupOrder(props) {
         totalPlayers = Object.assign(totalPlayers, allInfo.mocks[i].players)
     }
 
-    console.log(totalIds)
-    console.log(totalTeams)
-    console.log(totalPickedPlayers)
-    console.log(totalPlayers)
 
     let allRoundInfo = {
         ids: totalIds,
@@ -61,7 +57,6 @@ export default function ShareModal(props) {
         setShow(true);
 
         //draftOutput = draftText(allRoundInfo);
-        console.log(draftOutput)
     }
 
     return (
