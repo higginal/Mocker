@@ -1,5 +1,4 @@
 import React from 'react';
-//import Card from 'react-bootstrap/Card';
 import styled from 'styled-components';
 import PlayerCard from './playerCard';
 import teamData from './team-data'

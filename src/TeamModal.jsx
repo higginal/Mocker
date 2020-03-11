@@ -33,13 +33,7 @@ export default function TeamModal(props) {
         state = { value: event.target.value }
 
         sendData();
-        //props.teamId = state.value;
         
-    }
-    //TODO: Fix later
-    const handleSubmit = (event) => {
-
-        props.teamId = state.value;        
     }
 
     const sendData = () => {

@@ -35,20 +35,13 @@ export default class PlayerCard extends React.Component {
 
     constructor(props) {
         super(props)
-
-        //console.log(props.value)
-        const playerId = props.playerId
-        //console.log(props.teams[props.value])
-        //console.log(props.players[props.id].content)
-
+        
         this.state = {
             id: props.id,
             playerId:  props.playerId,
             playerName:  props.players[props.id]['content'],
             pos: props.players[props.id]['pos']
-            //teamColor: teamData[props.teams[teamId].content].color
-            //teamLink: null,
-            //teamImage: null
+  
         }
 
     }

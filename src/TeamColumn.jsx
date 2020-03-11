@@ -43,7 +43,7 @@ export default class TeamColumn extends React.Component {
             teamIds: this.props.teamIds
 
         }
-        //alert(this.state.teamIds)
+
     }
 
     render() {

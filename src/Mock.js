@@ -6,7 +6,6 @@ import PlayerColumn from './PlayerColumn';
 import PlayerPool from './PlayerPool';
 import initialData from './initial-data.js';
 import styled from 'styled-components';
-import PlayersFile from './players.json';
 
 
 const DraftTable = styled.div`
@@ -25,18 +24,6 @@ export default class Mock extends React.Component {
 
     state = initialData;
 
-    sendData = (playerColumnIds) => {
-        //console.log(this.state.columns['player-column'].playerIds)
-        //console.log(this.state.columns['player-pool'].playerIds)
-        this.props.parentCallback({
-            ids: this.props.mockPage.columns['team-column'].teamIds,
-            teams: this.props.mockPage.teams,
-            pickedPlayers: playerColumnIds,
-            players: this.props.mockPage.players
-        });
-        
-
-    }
 
     refreshTable = () => {
 
@@ -47,52 +34,7 @@ export default class Mock extends React.Component {
     constructor(props) {
 
         super(props)
-
         this.state = props.mockPage
-        /*
-        let defaultOrder = {};
-        let filledTeamIds = []
-
-        var counter = 0;
-
-        initialData.draftOrder.map(function (value) {
-
-            defaultOrder['team-' + counter] = (
-                {
-                    id: 'team-' + counter,
-                    content: value
-                }
-            )
-
-            filledTeamIds.push('team-' + counter)
-            counter++;
-        }
-        )
-
-
-
-        const allPlayers = {}
-
-        console.log(PlayersFile['players']['Tua-T'])
-
-        this.state = {
-            ...this.state,
-            teams: defaultOrder,
-            columns: {
-                ...this.state.columns,
-                'team-column': {
-                    ...this.state.columns['team-column'],
-                    teamIds: filledTeamIds
-                },
-                'player-pool': {
-                    ...this.state.columns['player-pool'],
-                    playerIds: this.state.allPlayerIds
-                }
-            }
-        }
-
-        */
-        // this.sendData(this.state.columns['player-column'].playerIds)
 
     }
 
@@ -132,13 +74,11 @@ export default class Mock extends React.Component {
                 }
             };
 
-            //this.props.mockPage.setState(newState)
+
             
             this.props.changeMockCallback(newState, this.props.mockIndex)
 
-            //this.setState(newState)
-            this.sendData(this.props.mockPage.columns['player-column'].playerIds)
-            //console.log(this.state.teams)
+            
         } else {
             //For the players
             const startColumn = this.props.mockPage.columns[source.droppableId];
@@ -165,12 +105,8 @@ export default class Mock extends React.Component {
                     },
                 };
 
-                //this.setState(newState)
-                //this.props.mockPage = newState
 
                 this.props.changeMockCallback(newState, this.props.mockIndex)
-
-                this.sendData(this.props.mockPage.columns['player-column'].playerIds)
 
 
             } else {
@@ -206,20 +142,10 @@ export default class Mock extends React.Component {
 
                 };
 
-                //console.log(newAltState.columns['player-column'].playerIds)
-
-                //this.props.mockPage.setState(newAltState);
-
                 this.props.changeMockCallback(newAltState, this.props.mockIndex);
-
-                //this.setState(newAltState);
-
-                //this.sendData(newAltState.columns['player-column'].playerIds)
 
             }
         }
-
-        //console.log(PlayersFile['players']['Tua-T'].content)
 
 
     }
@@ -232,21 +158,18 @@ export default class Mock extends React.Component {
             <DragDropContext onDragEnd={this.onDragEnd}>
                 <DraftTable>
                     {this.props.mockPage.columnOrder.map(columnId => {
-                        //alert(columnId)
+
                         const teamColumn = this.props.mockPage.columns[columnId];
 
-                        //alert(teamColumn.id)
                         if (columnId === 'team-column') {
-                            const teams = this.props.mockPage.teams;
+                            
                             const actualTeams = teamColumn.teamIds;
-                            //const teamIds = teams.map(teamId => this.state.teams)
-                            //teamColumn.teamIds = Array(teams);
 
                             return <TeamColumn key={teamColumn.id} title="Teams" teamIds={actualTeams} column={teamColumn} teams={this.props.teamSetup} round={this.props.mockIndex}/>
                         }
 
                         if (columnId === 'player-column') {
-                            //const players = this.state.players;
+
                             const players = this.props.mockPage.players;
                             const pickedPlayers = teamColumn.playerIds;
 

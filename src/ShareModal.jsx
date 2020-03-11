@@ -20,9 +20,8 @@ function setupOrder(props) {
     let totalTeams = {}
     let totalPickedPlayers = []
     let totalPlayers = {}
-
+    //Collect all chosen teams based on the number of pages
     var i;
-    var count = 0;
     for (i = 0; i < allInfo.totalRounds; i++) {
 
         totalIds = totalIds.concat(allInfo.mocks[i].columns['team-column'].teamIds)
@@ -47,8 +46,6 @@ function setupOrder(props) {
 export default function ShareModal(props) {
 
     var draftOutput = setupOrder(props)
-    //draftText(props.teamInfo)
-
 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -56,7 +53,6 @@ export default function ShareModal(props) {
 
         setShow(true);
 
-        //draftOutput = draftText(allRoundInfo);
     }
 
     return (
@@ -70,13 +66,7 @@ export default function ShareModal(props) {
                 </Form.Control>
             </Modal.Body>
         </Modal>
-
         </>
     );
-
-
-
-
-
 
 }

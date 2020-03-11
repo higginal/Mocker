@@ -29,17 +29,13 @@ export default class TeamCard extends React.Component {
     constructor(props) {
         super(props)
 
-        //console.log(props.value)
         const teamId = props.value
-        //console.log(props.teams[props.value])
         
         this.state = {
             id: props.id,
             teamId: props.value,
             teamName: teamData[props.teams[teamId].content].name,
             teamColor: teamData[props.teams[teamId].content].color
-            //teamLink: null,
-            //teamImage: null
         }
 
 
@@ -56,19 +52,8 @@ export default class TeamCard extends React.Component {
             teamColor: teamData[parseInt(childData.value)].color
         }
 
-        //this.props.teams.setState(newState)
         this.setState(newState2)
         console.log(this.props.teams)
-
-       /* this.setState({
-            ...this.state,
-            teamId: {
-
-
-
-            }
-        });
-        */
 
         console.log(this.state.teamId)
     }
@@ -76,7 +61,7 @@ export default class TeamCard extends React.Component {
 
 
     render() {
-        //console.log(this.props.teams)
+
         return (
             <Draggable draggableId={this.props.id} index={this.props.index}>
                 {(provided, snapshot) => (
