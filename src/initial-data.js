@@ -1,4 +1,4 @@
-import playerFile2 from './testPlayers.json'
+import playerFile2 from './morePlayers.json'
 
 
 var request = new XMLHttpRequest();
