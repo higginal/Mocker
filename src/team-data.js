@@ -65,7 +65,7 @@ const teamData = {
     },
     16: {
         name: "Los Angeles Chargers",
-        color: "#0080C6"
+        color: "#FFC20E"
     },
     17: {
         name: "Los Angeles Rams",
@@ -121,7 +121,7 @@ const teamData = {
     },
     30: {
         name: "Tennessee Titans",
-        color: "#0C2340"
+        color: "#4B92DB"
     },
     31: {
         name: "Washington Redskins",
