@@ -42,7 +42,12 @@ class Top extends React.Component {
     mocks: {},
     currentMock: 0,
     totalRounds: 1,
-    message: "t",
+    message: {
+      ids: [],
+      teams: [],
+      pickedPlayers: [],
+      players: []
+    },
     currentMockObj: null,
     globalPlayerPool: {}
   }
@@ -58,7 +63,12 @@ class Top extends React.Component {
     this.setState({
       ...this.state,
       globalPlayerPool: newState.columns['player-pool'].playerIds,
-      message: 'ok boom',
+      message: {
+        ids: newState.columns['team-column'].teamIds,
+        teams: newState.teams,
+        pickedPlayers: newState.columns['player-column'].playerIds,
+        players: newState.players
+      },
       mocks: {
         ...this.state.mocks,
         [index]: newState
@@ -221,7 +231,7 @@ class Top extends React.Component {
           <ToggleButtonGroup type="radio" name="pages" size="lg" defaultValue="Create" className="btnGrp" >
             <ToggleButton variant="danger" value="About" disabled="true">About</ToggleButton>
 
-            <ShareModal teamInfo={this.state.message}><ToggleButton variant="danger" value="Share" active>Share</ToggleButton> </ShareModal>
+            <ShareModal teamInfo={this.state.message} allData={this.state}><ToggleButton variant="danger" value="Share" active>Share</ToggleButton> </ShareModal>
 
             <ToggleButton variant="danger" value="Create" active>Create</ToggleButton>
             <ToggleButton variant="danger" value="Load" disabled="true">Load</ToggleButton>
