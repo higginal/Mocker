@@ -1,5 +1,10 @@
 This application is made for mocking the NFL draft and provides players, teams, and 3 seperate rounds for draft simulation and sharing. The drafts made can be copied and shared onto either Reddit, or copied into spreadsheet csv format. If any of you find this useful please feel free to donate or let me know how you would like to improve it.
 
+Hosted on: 
+
+[Mocker](https://mocker.netlify.com/)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
