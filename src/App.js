@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container';
 import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup'
 import ToggleButton from 'react-bootstrap/ToggleButton'
 import ShareModal from './ShareModal';
+import LoadModal from './LoadModal';
 import SaveModal from './SaveModal';
 import Button from 'react-bootstrap/Button';
 import logo from './images/yellow_brown_logo.png';
@@ -70,6 +71,13 @@ class Top extends React.Component {
 
     })
   }
+
+  loadMock = (newState => {
+    this.setState(newState).then(
+      alert("Mock Correctly Loaded")
+    )
+
+  })
 
 
   addMockPage() {
@@ -193,12 +201,9 @@ class Top extends React.Component {
 
           <ToggleButtonGroup type="radio" name="pages" size="lg" defaultValue="Create" className="btnGrp" >
             <ToggleButton variant="danger" value="About" disabled="true">About</ToggleButton>
-
             <ShareModal teamInfo={this.state.message} allData={this.state}><ToggleButton variant="danger" value="Share" active>Share</ToggleButton> </ShareModal>
-
-            <ToggleButton variant="danger" value="Create" active>Create</ToggleButton>
             <SaveModal allData={this.state}><ToggleButton variant="danger" value="Save" disabled="true">Save</ToggleButton></SaveModal>
-            <ToggleButton variant="danger" value="Load" disabled="true">Load</ToggleButton>
+            <LoadModal allData={this.state} changeMockCallback={this.loadMock}><ToggleButton variant="danger" value="Load" disabled="true">Load</ToggleButton></LoadModal>
             <ToggleButton variant="danger" value="More" disabled="true">More</ToggleButton>
           </ToggleButtonGroup>
         </div>

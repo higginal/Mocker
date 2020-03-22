@@ -39,18 +39,18 @@ export default function DraftCompiler(draftInfo) {
         text += redditFormat;
         text += excelFormat;
         //var testStr = "THIS IS A HUGE TEST";
-        text += shareableFormat;
+        //text += shareableFormat;
 
-        let objJsonStr = JSON.stringify(draftInfo);
-        let objJsonB64 = Buffer.from(objJsonStr).toString("base64");
+        //let objJsonStr = JSON.stringify(draftInfo);
+       // let objJsonB64 = Buffer.from(objJsonStr).toString("base64");
         
-        console.log(objJsonB64);
+        //console.log(objJsonB64);
 
-        var actual = JSON.parse(atob(objJsonB64));
-        console.log(actual);
+        //var actual = JSON.parse(atob(objJsonB64));
+        ///console.log(actual);
 
 
-        var testConvert = btoa(draftInfo);
+       // var testConvert = btoa(draftInfo);
         //console.log(draftInfo);
         //console.log(testConvert);
         //text += testConvert;
