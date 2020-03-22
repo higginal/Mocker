@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/Container';
 import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup'
 import ToggleButton from 'react-bootstrap/ToggleButton'
 import ShareModal from './ShareModal';
+import SaveModal from './SaveModal';
 import Button from 'react-bootstrap/Button';
 import logo from './images/yellow_brown_logo.png';
 import initialData from './initial-data.js';
@@ -196,6 +197,7 @@ class Top extends React.Component {
             <ShareModal teamInfo={this.state.message} allData={this.state}><ToggleButton variant="danger" value="Share" active>Share</ToggleButton> </ShareModal>
 
             <ToggleButton variant="danger" value="Create" active>Create</ToggleButton>
+            <SaveModal allData={this.state}><ToggleButton variant="danger" value="Save" disabled="true">Save</ToggleButton></SaveModal>
             <ToggleButton variant="danger" value="Load" disabled="true">Load</ToggleButton>
             <ToggleButton variant="danger" value="More" disabled="true">More</ToggleButton>
           </ToggleButtonGroup>
